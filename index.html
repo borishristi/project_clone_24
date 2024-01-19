@@ -1,95 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- <script src="https://kit.fontawesome.com/bcfa7a8368.js" crossorigin="anonymous"></script> -->
     <title>FRANCE 24 CLONE</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Container -->
 
     <div class="container border border-secondary">
-      <div class="row position-relative">
-        <div class="col-4">
-          <img height="50px" src="images/Logo_FRANCE24.svg" alt="" />
-        </div>
-        <!-- <div class="col-4 border">
+        <div class="row position-relative">
+            <div class="col-4">
+                <img height="50px" src="images/Logo_FRANCE24.svg" alt="" />
+            </div>
+            <!-- <div class="col-4 border">
                 <i class="fa-regular fa-circle-play fa-2xl position-absolute top-50" style="margin-left: 70px;"></i>
                 <span class="position-absolute start-50" style="margin-top: 10px;"><strong>EN DIRECT</strong></span>
             </div> -->
-        <div class="col-4 border text-center my-auto">
-          <i class="fa-regular fa-circle-play fa-2xl"></i>
-          <b>EN DIRECT</b>
+            <div class="col-4 border text-center my-auto">
+                <i class="fa-regular fa-circle-play fa-2xl"></i>
+                <b>EN DIRECT</b>
+            </div>
+            <div class="col-4 text-end my-auto">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </div>
         </div>
-        <div class="col-4 text-end my-auto">
-          <i class="fa-solid fa-bars fa-2xl"></i>
-        </div>
-      </div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00a7e3">
-      <div class="container">
-        <div class="col-4 text-start my-auto mr-2" style="width: auto;">
-          <i class="fa-solid fa-house-chimney-user fa-xl" style="color: #ffffff"></i>
+        <div style="height: auto;" class="container">
+            <div class="col-4 text-start my-auto mr-2" style="width: auto;">
+                <i class="fa-solid fa-house-chimney-user fa-xl" style="color: #ffffff"></i>
+            </div>
+            <span><a style="background: rgb(255, 255, 255, 0.3);"
+                    class="btn btn-sm text-white text-start ms-4 px-0 py-0" href="#">#COVID-19</a></span>
+            <span><a style="background: rgb(255, 255, 255, 0.3);" class="btn btn-sm text-white px-0 ms-2 py-0"
+                    href="#">#HAUT-KARABAKH</a></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">FRANCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">AFRIQUE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">ELECTIONS AMERICAINES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">REPORTAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">STOP L'INFOX</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <span><a style="background: rgb(255, 255, 255, 0.3);" class="btn btn-sm text-white text-start ms-4" href="#">#COVID-19</a></span>
-        <span><a style="background: rgb(255, 255, 255, 0.3);" class="btn btn-sm text-white ms-2" href="#">#HAUT-KARABAKH</a></span>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">FRANCE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">AFRIQUE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">ELECTIONS AMERICAINES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">REPORTAGES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">STOP L'INFOX</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
-    <!-- <span>Notification</span> -->
+    <div class="container-fluid notification-bar">
+        <div class="container">
+            <span>This is a notification bar...</span>
+        </div>
+    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-8 border border-success border-dotted">Articles</div>
-        <div class="col-4 border border-success">Info en continu</div>
-      </div>
-      <div class="col border border-dark">Autres articles</div>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-lg-8 border border-danger ">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="article-image w-100" src="images/article-image.jpg" alt="">
+                        <p class="h2 mt-1 mb-3">Titre principal</p>
+                    </div>
+                    <div class="col-12 border">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img class="article-image w-100" src="images/article-1.jpg" alt="">
+                                <p class="h6 mt-1 mb-3">titre info 1</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="article-image w-100" src="images/article-2.jpg" alt="">
+                                <p class="h6 mt-1 mb-3">titre info 2</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="article-image w-100" src="images/article-3.jpg" alt="">
+                                <p class="h6 mt-1 mb-3">titre info 3</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img class="article-image w-100" src="images/article-4.jpg" alt="">
+                                <p class="h6 mt-1 mb-3">titre info 4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 border border-success">
+                Info Continu
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg mt-1 border border-dark">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="article-image w-100" src="images/article-5.jpg" alt="">
+                <p class="h6 mt-1 mb-3">titre info 4</p>
+            </div>
+            <div class="col-md-6">
+                <img class="article-image w-100" src="images/article-6.jpg" alt="">
+                <p class="h6 mt-1 mb-3">titre info 4</p>
+            </div>
+            <div class="col-md-6">
+                <img class="article-image w-100" src="images/article-7.jpg" alt="">
+                <p class="h6 mt-1 mb-3">titre info 4</p>
+            </div>
+            <div class="col-md-6">
+                <img class="article-image w-100" src="images/article-8.jpg" alt="">
+                <p class="h6 mt-1 mb-3">titre info 4</p>
+            </div>
+            <div class="col-md-6">
+                <img class="article-image w-100" src="images/article-9.jpg" alt="">
+                <p class="h6 mt-1 mb-3">titre info 4</p>
+            </div>
+            <div class="col-md-6">
+                <img class="article-image w-100" src="images/article-10.jpg" alt="">
+                <p class="h6 mt-1 mb-3">titre info 4</p>
+            </div>
+        </div>
     </div>
 
     <!-- JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

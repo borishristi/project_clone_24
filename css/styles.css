@@ -2,3 +2,14 @@
     height: 30px;
     border: 1px solid black;
 }
+
+.notification-bar{
+    background-color: #000145;
+    color: white;
+}
+
+/* .article-image {
+    background-color: gray;
+    height: 400px;
+    width: 100%;
+} */
