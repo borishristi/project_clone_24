@@ -8,6 +8,27 @@
     color: white;
 }
 
+.color-hour {
+    background-color: #00a7e3;
+    color: white;
+}
+
+.card-info {
+    height: 40px;
+}
+
+.taille {
+    height: 100%;
+}
+
+.vue_border {
+    border: 1px solid brown;
+    border-radius: 50%;
+}
+
+.block_span {
+    display: inline-block;
+}
 /* .article-image {
     background-color: gray;
     height: 400px;
